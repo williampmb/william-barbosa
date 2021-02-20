@@ -1,6 +1,7 @@
 import React from "react";
 import { shallow } from "enzyme";
 import Header from "./Header";
+import { findComponentByTagTest } from "../Utils";
 
 const setUp = (props = {}) => {
   const component = shallow(<Header {...props} />);
@@ -10,18 +11,18 @@ const setUp = (props = {}) => {
 describe("Header Component", () => {
   let component;
   beforeEach(() => {
-    component = setUp;
+    component = setUp();
   });
 
   it("Should render without erros", () => {
     //console.log(component.debug());
-    const wrapper = component.find(`[tagTest='navbar']`);
+    const wrapper = findComponentByTagTest(component, "navbar");
     expect(wrapper.length).toBe(1);
   });
 
   it("Should render Home,Project and Contact NavLinks", () => {
-    const wrapper = component.find(`[tagTest='navmenu']`);
+    const wrapper = findComponentByTagTest(component, "navmenu");
     const wrapChildren = wrapper.children();
-    wrapChildren.childAt(0);
+    expect(wrapChildren.length).toBe(3);
   });
 });
