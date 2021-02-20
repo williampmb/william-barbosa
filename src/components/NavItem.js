@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const NavItem = ({ children, toPath, onClick }) => {
   if (!children) {
@@ -12,6 +13,12 @@ const NavItem = ({ children, toPath, onClick }) => {
       </Link>
     </li>
   );
+};
+
+NavItem.propTypes = {
+  children: PropTypes.string,
+  toPath: PropTypes.string,
+  onClick: PropTypes.func,
 };
 
 export default NavItem;
