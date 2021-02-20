@@ -3,7 +3,7 @@ import { shallow } from "enzyme";
 import Header from "./Header";
 import { findComponentByTagTest } from "../Utils";
 
-const setUp = (props = {}) => {
+const setup = (props = {}) => {
   const component = shallow(<Header {...props} />);
   return component;
 };
@@ -11,11 +11,10 @@ const setUp = (props = {}) => {
 describe("Header Component", () => {
   let component;
   beforeEach(() => {
-    component = setUp();
+    component = setup();
   });
 
   it("Should render without erros", () => {
-    //console.log(component.debug());
     const wrapper = findComponentByTagTest(component, "navbar");
     expect(wrapper.length).toBe(1);
   });
