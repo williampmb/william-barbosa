@@ -1,7 +1,7 @@
 .contact {
-    /* background: url("./../../resource/lax-bike-trail.jpg") no-repeat center
-        center / cover; */
-    height: 100vh;
+    background: url("./../../resource/lax-bike-trail.jpg") no-repeat center
+        center / cover;
+    height: 91.5vh;
 }
 .main-section.contact {
     display: flex;
@@ -17,14 +17,17 @@ a {
     color: black;
 }
 
-.main-section.contact ul {
+.main-section.contact > ul {
     display: flex;
     flex-direction: row;
-    transform: translateY(30%);
+    height: 150px;
+    margin-top: 15%;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
 }
 
-.main-section.contact ul li a {
-    position: relative;
+.main-section.contact > ul > li > a {
     display: flex;
     margin: 30px;
     justify-content: center;
