@@ -1,3 +1,77 @@
 .main-section.projects {
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    background-image: url("../../resource/card-texture.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 270px;
+    max-height: 450px;
+    border: 5px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    background-color: blue;
+    background-repeat: no-repeat;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.title-banner {
+    width: 90%;
+    height: 40px;
+    position: relative;
+}
+
+.title-txt {
+    position: absolute;
+}
+
+.wrapper-image img {
+    height: auto;
+    width: 90%;
+    border: 5px solid gray;
+}
+
+.wrapper-image {
+    background-color: green;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    background-color: cyan;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-family: "Tillana", cursive;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description span {
+    text-align: justify;
+    text-justify: inter-word;
+    width: 90%;
+}
+
+.footer {
+    background-color: red;
+    display: flex;
 }

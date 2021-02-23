@@ -1,6 +1,6 @@
 .home {
-    background: url("./../../resource/lax-rock-view.jpg") no-repeat center
-        center / cover;
+    background: url("../../resource/lax-rock-view.jpg") no-repeat center center /
+        cover;
 }
 
 .main-section.home {
