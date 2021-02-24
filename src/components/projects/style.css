@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     padding: 100px;
     position: relative;
     background-color: #aa55f1;
@@ -23,7 +22,7 @@
     background-position: center;
     background-repeat: no-repeat;
 
-    width: 270px;
+    width: 300px;
     height: 450px;
     border: 5px solid black;
     border-radius: 5px;
@@ -55,8 +54,9 @@
 }
 
 .card-image {
-    height: auto;
+    object-fit: cover;
     width: 90%;
+    height: 180px;
     border: 5px solid;
     border-image-slice: 1;
     border-image-source: radial-gradient(
@@ -117,9 +117,11 @@
 
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer img {
@@ -128,9 +130,22 @@
     align-items: center;
 }
 
-.footer span {
+.loc {
+    position: relative;
     display: flex;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.loc-content {
+    position: absolute;
+    transform: translateX(50%), translateY(50%);
+    justify-content: center;
+    align-items: center;
+}
+.tought {
+    display: flex;
+    width: 65%;
     font-family: "Romanesco", cursive;
     line-height: 0.9;
     color: black;

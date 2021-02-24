@@ -33,8 +33,13 @@ const Card = () => {
                 </span>
             </div>
             <div className="footer">
-                <span>- how does engine works? let's build one and see...</span>
-                <img src={shield}></img>
+                <span className="tought">
+                    - how does engine works? let's build one and see...
+                </span>
+                <div className="loc">
+                    <span className="loc-content">21k</span>
+                    <img src={shield} width="90px"></img>
+                </div>
             </div>
         </div>
     );
