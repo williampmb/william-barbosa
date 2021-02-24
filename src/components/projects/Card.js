@@ -1,3 +1,7 @@
+import shield from "../../resource/shield-sword.svg";
+import htmlSvg from "../../resource/html.svg";
+import castle from "../../resource/castle.jpg";
+
 const Card = () => {
     return (
         <div className="card">
@@ -6,7 +10,18 @@ const Card = () => {
                 <span className="title-txt">Suvival TD</span>
             </div>
             <div className="wrapper-image">
-                <img src="images/castle.jpg"></img>
+                <img className="card-image" src={castle}></img>
+                <div className="skills">
+                    <div className="skill-content">
+                        <img src={htmlSvg} width="20px"></img>
+                    </div>
+                    <div className="skill-content">
+                        <img src={htmlSvg} width="20px"></img>
+                    </div>
+                    <div className="skill-content">
+                        <img src={htmlSvg} width="20px"></img>
+                    </div>
+                </div>
             </div>
             <div className="description">
                 <span>
@@ -18,8 +33,8 @@ const Card = () => {
                 </span>
             </div>
             <div className="footer">
-                <span> the power is 35</span>
-                <img src="images/shield-sword.png"></img>
+                <span>- how does engine works? let's build one and see...</span>
+                <img src={shield}></img>
             </div>
         </div>
     );

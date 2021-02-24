@@ -1,28 +1,41 @@
 .main-section.projects {
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 100px;
+    position: relative;
+    background-color: #aa55f1;
+}
+
+.content {
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 900px;
 }
 
 .card {
+    margin: 10px;
     background-image: url("../../resource/card-texture.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-width: 270px;
-    max-height: 450px;
+
+    width: 270px;
+    height: 450px;
     border: 5px solid black;
     border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .title {
-    background-color: blue;
     background-repeat: no-repeat;
-    height: 30px;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,32 +50,63 @@
 
 .title-txt {
     position: absolute;
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
 }
 
-.wrapper-image img {
+.card-image {
     height: auto;
     width: 90%;
-    border: 5px solid gray;
+    border: 5px solid;
+    border-image-slice: 1;
+    border-image-source: radial-gradient(
+        61.22% 111.36% at 24.88% 37.5%,
+        #494949 0%,
+        #aaaaaa 62.5%,
+        #999999 100%
+    );
+}
+
+.skills {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+    left: 25px;
+    transform: translateY(45%);
+}
+/* select a who left child another a*/
+.skill-content + .skill-content {
+    margin-left: 6px;
+}
+
+.skill-content {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
 }
 
 .wrapper-image {
-    background-color: green;
     margin-top: 10px;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .description {
-    background-color: cyan;
-    margin-top: 20px;
     font-size: 0.8rem;
     font-family: "Tillana", cursive;
     line-height: 1.2;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .description span {
@@ -72,6 +116,23 @@
 }
 
 .footer {
-    background-color: red;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+}
+
+.footer img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer span {
+    display: flex;
+    width: 60%;
+    font-family: "Romanesco", cursive;
+    line-height: 0.9;
+    color: black;
+    font-size: 24px;
 }
