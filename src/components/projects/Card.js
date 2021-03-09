@@ -2,24 +2,24 @@ import shield from "../../resource/shield-sword.svg";
 import htmlSvg from "../../resource/html.svg";
 import castle from "../../resource/castle.jpg";
 
-const Card = () => {
+const Card = ({index}) => {
     return (
-        <div className="card">
+        <div className="card" style={{zIndex:index}}>
             <div className="title">
-                <img className="title-banner" src="images/banner-title.png" />
+                <img className="title-banner" alt="banner" src="images/banner-title.png" />
                 <span className="title-txt">Suvival TD</span>
             </div>
             <div className="wrapper-image">
-                <img className="card-image" src={castle}></img>
+                <img className="card-image" src={castle} alt="castke"></img>
                 <div className="skills">
                     <div className="skill-content">
-                        <img src={htmlSvg} width="20px"></img>
+                        <img src={htmlSvg} width="20px" alt="svg"></img>
                     </div>
                     <div className="skill-content">
-                        <img src={htmlSvg} width="20px"></img>
+                        <img src={htmlSvg} width="20px" alt="svg2"></img>
                     </div>
                     <div className="skill-content">
-                        <img src={htmlSvg} width="20px"></img>
+                        <img src={htmlSvg} width="20px" alt="svg3"></img>
                     </div>
                 </div>
             </div>
@@ -37,8 +37,8 @@ const Card = () => {
                     - how does engine works? let's build one and see...
                 </span>
                 <div className="loc">
-                    <span className="loc-content">21k</span>
-                    <img src={shield} width="90px"></img>
+                    <span className="loc-content">21k  <span className="loc-name">loc</span></span>
+                    <img src={shield} alt="shield" width="90px"></img>
                 </div>
             </div>
         </div>
