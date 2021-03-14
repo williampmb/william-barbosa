@@ -4,7 +4,9 @@
     align-items: center;
     padding: 100px;
     position: relative;
-    background-color: #aa55f1;
+    /* background-color: #aa55f1; */
+    background: url("../../resource/tree.jpg") no-repeat center center /
+    cover;
 }
 
 .content {
@@ -95,14 +97,14 @@
 }
 
 .skill-content {
-    background-color: white;
+    background-color: #64593f;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     justify-content: center;
     display: flex;
     align-items: center;
-    border: 2px solid black;
+    border: 2px solid gray;
 }
 
 .wrapper-image {
