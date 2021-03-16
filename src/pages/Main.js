@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Contact from "../components/contact";
 import Home from "../components/home";
 import Projects from "../components/projects";

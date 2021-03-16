@@ -1,19 +1,23 @@
-import {
-    getSkillSVG
-} from "../../constants/svg";
-// import HTML_SVG from "../../resource/html.svg";
-// import CSS_SVG from "../../resource/css.svg";
-// import JS_SVG from "../../resource/js.svg";
-// import POSTGRES_SVG from "../../resource/postgres.svg";
+import { getSkillSVG } from "../../constants/svg";
 
-import shield from "../../resource/shield-sword.svg";
+import shield from "../../resource/svg/shield-sword.svg";
 
-const Card = ({ index, title, description, skills, observation, loc,imgUrl }) => {
-  const cardSkills = skills && skills.map((tech,index) => (
-    <div key={index} className="skill-content">
-      <img src={getSkillSVG(tech)} alt="svg2"></img>
-    </div>
-  ));
+const Card = ({
+  index,
+  title,
+  description,
+  skills,
+  observation,
+  loc,
+  imgUrl,
+}) => {
+  const cardSkills =
+    skills &&
+    skills.map((tech, index) => (
+      <div key={index} className="skill-content">
+        <img src={getSkillSVG(tech)} alt="svg2"></img>
+      </div>
+    ));
 
   return (
     <div className="card" style={{ zIndex: index }}>
