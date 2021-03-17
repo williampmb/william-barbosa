@@ -8,7 +8,12 @@ import REACT_SVG from "../resource/svg/react.svg";
 import FIREBASE_SVG from "../resource/svg/firebase.svg";
 import JAVA_SVG from "../resource/svg/java.svg";
 import PYTHON_SVG from "../resource/svg/python.svg";
-
+import ARTICLE_SVG from "../resource/svg/article.svg";
+import RAILS_SVG from "../resource/svg/rails.svg";
+import TYPESCRIPT_SVG from "../resource/svg/typescript.svg";
+import NEURAL_SVG from "../resource/svg/neural.svg";
+import MONGO_SVG from "../resource/svg/mongo.svg";
+import SPRING_SVG from "../resource/svg/spring.svg";
 
 const getSkillSVG = (skill) => {
   switch (skill) {
@@ -32,6 +37,18 @@ const getSkillSVG = (skill) => {
       return JAVA_SVG;
     case SKILLS.PYTHON:
       return PYTHON_SVG;
+    case SKILLS.ARTICLE:
+      return ARTICLE_SVG;
+    case SKILLS.RAILS:
+      return RAILS_SVG;
+    case SKILLS.TYPESCRIPT:
+      return TYPESCRIPT_SVG;
+    case SKILLS.NEURAL:
+      return NEURAL_SVG;
+    case SKILLS.MONGODB:
+      return MONGO_SVG;
+    case SKILLS.SPRING:
+      return SPRING_SVG;
     default:
   }
 };
