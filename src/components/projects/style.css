@@ -97,7 +97,8 @@
 }
 
 .skill-content {
-    background-color: #64593f;
+    /* background-color: #64593f; */
+    background-color: #443061;
     width: 30px;
     height: 30px;
     border-radius: 50%;

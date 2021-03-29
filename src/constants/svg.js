@@ -14,6 +14,9 @@ import TYPESCRIPT_SVG from "../resource/svg/typescript.svg";
 import NEURAL_SVG from "../resource/svg/neural.svg";
 import MONGO_SVG from "../resource/svg/mongo.svg";
 import SPRING_SVG from "../resource/svg/spring.svg";
+import ALGORITHM_SVG from "../resource/svg/algorithm.svg";
+import API_SVG from "../resource/svg/api.svg";
+import BOOTSTRAP_SVG from "../resource/svg/bootstrap.svg";
 
 const getSkillSVG = (skill) => {
   switch (skill) {
@@ -49,6 +52,12 @@ const getSkillSVG = (skill) => {
       return MONGO_SVG;
     case SKILLS.SPRING:
       return SPRING_SVG;
+    case SKILLS.ALGORITHM:
+      return ALGORITHM_SVG;
+    case SKILLS.API:
+      return API_SVG;
+    case SKILLS.BOOTSTRAP:
+      return BOOTSTRAP_SVG;
     default:
   }
 };

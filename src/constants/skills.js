@@ -16,6 +16,9 @@ const SKILLS = {
   NEURAL: "neural_network",
   MONGODB: "mongo",
   SPRING: "spring_boot",
+  ALGORITHM: 'Algorithm',
+  API: 'api',
+  BOOTSTRAP: 'bootstrap', 
 };
 
 export default SKILLS;
